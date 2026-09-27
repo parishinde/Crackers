@@ -1,0 +1,6 @@
+/* Small product-card quantity control kept separate so the main stylesheet stays easy to scan. */
+.card-add-row { display: flex; align-items: center; gap: 7px; }
+.card-quantity { display: flex; align-items: center; border: 1px solid #e7e3db; border-radius: 7px; overflow: hidden; height: 31px; }
+.card-quantity button { width: 22px; height: 100%; border: 0; background: #fff; color: #111c38; cursor: pointer; font-size: 1rem; line-height: 1; }
+.card-quantity button:hover { background: #f5efe3; }
+.card-quantity span { width: 18px; text-align: center; font-size: .75rem; font-weight: 700; }

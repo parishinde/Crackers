@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shree Ganesh Crackers - local fireworks and celebration essentials." />
+  <title>Shree Ganesh Crackers | Celebrate Brightly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product-controls.css" />
+</head>
+<body>
+  <div class="announcement">✨ Celebrate responsibly — please follow all local rules, age restrictions, and permitted-use timings.</div>
+
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="Shree Ganesh Crackers home"><span class="brand-mark">✦</span><span data-shop-name>Shree Ganesh Crackers</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a><a href="#products">Products</a><a href="#categories">Categories</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+        <button class="cart-nav-btn" data-open-cart aria-label="Open shopping cart">🛒 <span>Cart</span> <b id="cartCount">0</b></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-spark spark-one">✦</div><div class="hero-spark spark-two">✦</div><div class="hero-spark spark-three">✦</div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">LOCAL CELEBRATIONS, BRIGHTER MOMENTS</p>
+          <h1>Make every celebration <em>shine.</em></h1>
+          <p class="hero-text">Curated crackers, festive favourites, and joyful combo packs from your neighbourhood celebration store.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#products">Shop crackers <span>→</span></a><a class="button button-ghost" href="#about">Our story</a></div>
+          <div class="hero-trust"><span>✦ Local shop</span><span>✦ Easy WhatsApp orders</span><span>✦ Festival combos</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="burst burst-a"></div><div class="burst burst-b"></div><div class="rocket-illustration">🚀</div><div class="hero-orb"><span>FESTIVE<br>JOY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-strip"><div class="container"><span>POPULAR THIS SEASON</span><a href="#products" data-filter-link="Combo Packs">Family celebration combos <b>→</b></a><a href="#products" data-filter-link="Sparklers">Sparkling favourites <b>→</b></a></div></section>
+
+    <section class="section container" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>Shop by category</h2></div><p>From gentle glows to sky-high colour, find a little magic for every gathering.</p></div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-heading product-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Celebration essentials</h2></div><label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Search crackers..." aria-label="Search crackers" /></label></div>
+        <div class="filter-row" id="filterRow" aria-label="Product filters"></div>
+        <p class="product-count" id="productCount"></p>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="festival-banner"><div class="container"><p class="eyebrow">CELEBRATE WITH CARE</p><h2>A little light. A lot of delight.</h2><p>Enjoy responsibly and always use products only as directed by the manufacturer.</p><a href="#products" class="text-link">Explore the collection →</a></div></section>
+
+    <section class="section about-section container" id="about"><div class="about-number">01</div><div><p class="eyebrow">ABOUT US</p><h2>Your local celebration partner.</h2></div><div class="about-copy"><p><span data-shop-name>Shree Ganesh Crackers</span> is a local shop built around the small moments that bring families and neighbourhoods together. We keep shopping simple: choose your favourites, send your order on WhatsApp, and we’ll take it from there.</p><p>Our collection is selected for festive occasions and family celebrations. Please always follow the instructions on the product packaging and applicable local regulations.</p></div></section>
+
+    <section class="contact-section" id="contact"><div class="container contact-card"><div><p class="eyebrow">GET IN TOUCH</p><h2>Ready for a brighter celebration?</h2><p>Questions about products or an order? We’re one message away.</p></div><div class="contact-details"><p><span>SHOP</span><strong data-shop-name>Shree Ganesh Crackers</strong></p><p><span>PHONE</span><a id="phoneLink" href="#"></a></p><p><span>ADDRESS</span><strong data-shop-address></strong></p><p><span>HOURS</span><strong data-shop-hours></strong></p><a class="button button-primary" id="contactWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp us <span>↗</span></a></div></div></section>
+  </main>
+
+  <footer><div class="container"><a class="brand" href="#home"><span class="brand-mark">✦</span><span data-shop-name>Shree Ganesh Crackers</span></a><p>© <span id="year"></span> <span data-shop-name>Shree Ganesh Crackers</span>. Celebrate responsibly.</p></div></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true"><div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping cart</h2></div><button class="icon-button" data-close-cart aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer" id="cartFooter"></div></aside><div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true"><div class="modal-card product-modal-card"><button class="icon-button modal-close" data-close-modal aria-label="Close">×</button><div id="productModalContent"></div></div></div>
+  <div class="modal" id="checkoutModal" aria-hidden="true" role="dialog" aria-modal="true"><div class="modal-card checkout-card"><button class="icon-button modal-close" data-close-checkout aria-label="Close">×</button><div id="checkoutContent"></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
